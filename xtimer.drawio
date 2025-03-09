@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.1.0">
   <diagram name="第 1 页" id="JjAhJUpeRirN_-w8hsYV">
-    <mxGraphModel dx="3199" dy="1688" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2527" dy="954" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -139,7 +139,7 @@
           <mxGeometry x="-640" y="55" width="830" height="590" as="geometry" />
         </mxCell>
         <mxCell id="cCkPG6rzrQ6bPVn2WC5E-68" value="SchedulerWorker" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="-400" y="90" width="330" height="205" as="geometry" />
+          <mxGeometry x="-400" y="90" width="370" height="200" as="geometry" />
         </mxCell>
         <mxCell id="cCkPG6rzrQ6bPVn2WC5E-69" value="TaskCache" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="-485" y="735" width="395" height="205" as="geometry" />
@@ -162,6 +162,25 @@
           <mxGeometry x="-0.2582" y="2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-80" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cCkPG6rzrQ6bPVn2WC5E-76" target="cCkPG6rzrQ6bPVn2WC5E-77">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-330" y="278" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-76" value="scheduledTask&lt;div&gt;(1s一次)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-333" y="140" width="100" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-82" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cCkPG6rzrQ6bPVn2WC5E-77" target="cCkPG6rzrQ6bPVn2WC5E-78">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-220" y="278" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-77" value="handleSlices&lt;br&gt;&lt;div&gt;(执行每个桶)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-217" y="140" width="100" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-78" value="handleSlice&lt;br&gt;&lt;div&gt;(执行)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-217" y="206" width="100" height="48" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
