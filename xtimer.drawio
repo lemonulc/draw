@@ -136,7 +136,7 @@
           <mxGeometry x="-879" y="940" width="136" height="70" as="geometry" />
         </mxCell>
         <mxCell id="cCkPG6rzrQ6bPVn2WC5E-67" value="任务执行" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;fontSize=20;" vertex="1" parent="1">
-          <mxGeometry x="-767" y="-130" width="830" height="785" as="geometry" />
+          <mxGeometry x="-767" y="-130" width="1027" height="785" as="geometry" />
         </mxCell>
         <mxCell id="cCkPG6rzrQ6bPVn2WC5E-68" value="SchedulerWorker" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="-735" y="-110" width="370" height="200" as="geometry" />
@@ -227,15 +227,49 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="cCkPG6rzrQ6bPVn2WC5E-99" value="run&lt;div&gt;执行60s&lt;/div&gt;&lt;div&gt;到时间latch-1&lt;/div&gt;&lt;div&gt;执行线程取消timer&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-680" y="302" width="110" height="68" as="geometry" />
+          <mxGeometry x="-687" y="311" width="110" height="68" as="geometry" />
         </mxCell>
         <mxCell id="cCkPG6rzrQ6bPVn2WC5E-98" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cCkPG6rzrQ6bPVn2WC5E-94" target="cCkPG6rzrQ6bPVn2WC5E-99">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-569.9999999999998" y="396" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-100" value="handleBatch&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;从zset取出这一秒的任务执行&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-536" y="301" width="116" height="69" as="geometry" />
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-100" value="handleBatch&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;从zset取出这一秒的任务执行，缓存没有，走数据库&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-536" y="301" width="116" height="89" as="geometry" />
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-113" value="TriggerPoolTask" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="-588.75" y="495" width="221.5" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-117" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="cCkPG6rzrQ6bPVn2WC5E-100" target="cCkPG6rzrQ6bPVn2WC5E-114">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-344.5" y="560.5000000000005" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-114" value="runExecutor&lt;div&gt;线程池异步执行&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-524.75" y="536" width="93.5" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-118" value="ExecutorWork" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="-310" y="473.5" width="511.5" height="175" as="geometry" />
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-119" value="work" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-292" y="536.5" width="93.5" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-123" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cCkPG6rzrQ6bPVn2WC5E-119" target="cCkPG6rzrQ6bPVn2WC5E-120">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-120" value="executeAndPostProcess" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-172.5" y="536.5" width="163.5" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-122" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cCkPG6rzrQ6bPVn2WC5E-120" target="cCkPG6rzrQ6bPVn2WC5E-121">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-121" value="executeTimerCallBack" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="17.75" y="536.5" width="163.5" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-126" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cCkPG6rzrQ6bPVn2WC5E-114" target="cCkPG6rzrQ6bPVn2WC5E-119">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-364.5" y="560.5000000000005" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
