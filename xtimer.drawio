@@ -1,9 +1,12 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.1.0">
   <diagram name="第 1 页" id="JjAhJUpeRirN_-w8hsYV">
-    <mxGraphModel dx="3457" dy="2124" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3837" dy="2325" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-130" value="redis操作" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;verticalAlign=bottom;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="-413" y="722" width="530" height="280" as="geometry" />
+        </mxCell>
         <mxCell id="cCkPG6rzrQ6bPVn2WC5E-66" value="任务迁移" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=middle;align=center;fontSize=20;" vertex="1" parent="1">
           <mxGeometry x="-1490" y="660" width="830" height="590" as="geometry" />
         </mxCell>
@@ -142,16 +145,16 @@
           <mxGeometry x="-735" y="-110" width="370" height="200" as="geometry" />
         </mxCell>
         <mxCell id="cCkPG6rzrQ6bPVn2WC5E-69" value="TaskCache" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=bottom;" vertex="1" parent="1">
-          <mxGeometry x="-485" y="735" width="395" height="205" as="geometry" />
+          <mxGeometry x="-392" y="750" width="395" height="205" as="geometry" />
         </mxCell>
         <mxCell id="cCkPG6rzrQ6bPVn2WC5E-70" value="cacheSaveTasks" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-460" y="792" width="100" height="48" as="geometry" />
+          <mxGeometry x="-367" y="807" width="100" height="48" as="geometry" />
         </mxCell>
         <mxCell id="cCkPG6rzrQ6bPVn2WC5E-71" value="GetTableName" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-350" y="792" width="100" height="48" as="geometry" />
+          <mxGeometry x="-257" y="807" width="100" height="48" as="geometry" />
         </mxCell>
         <mxCell id="cCkPG6rzrQ6bPVn2WC5E-72" value="getTasksFromCache" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-240" y="792" width="120" height="48" as="geometry" />
+          <mxGeometry x="-147" y="807" width="120" height="48" as="geometry" />
         </mxCell>
         <mxCell id="cCkPG6rzrQ6bPVn2WC5E-74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cCkPG6rzrQ6bPVn2WC5E-59" target="cCkPG6rzrQ6bPVn2WC5E-70">
           <mxGeometry relative="1" as="geometry">
