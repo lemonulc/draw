@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.1.0">
   <diagram name="第 1 页" id="JjAhJUpeRirN_-w8hsYV">
-    <mxGraphModel dx="1571" dy="914" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2835" dy="1291" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -55,6 +55,37 @@
         </mxCell>
         <mxCell id="cCkPG6rzrQ6bPVn2WC5E-32" value="migrateTimer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-650" y="670" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-36" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;MigratorWork" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1300" y="628" width="330" height="205" as="geometry" />
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cCkPG6rzrQ6bPVn2WC5E-38" target="cCkPG6rzrQ6bPVn2WC5E-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-38" value="work&lt;div&gt;(10s执行一次)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1260" y="673" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.875;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="cCkPG6rzrQ6bPVn2WC5E-39" target="cCkPG6rzrQ6bPVn2WC5E-41">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1060" y="503" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-39" value="加分布式锁，&lt;div&gt;60s过期&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1260" y="463" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.16;entryY=0.55;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="cCkPG6rzrQ6bPVn2WC5E-41" target="cCkPG6rzrQ6bPVn2WC5E-44">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-930" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-41" value="migrate" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1130" y="673" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.875;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="cCkPG6rzrQ6bPVn2WC5E-44" target="cCkPG6rzrQ6bPVn2WC5E-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-44" value="查找所有激活的Timer&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;执行迁移&lt;/span&gt;&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-900" y="660" width="150" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
