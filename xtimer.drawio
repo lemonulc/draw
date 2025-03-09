@@ -251,19 +251,19 @@
         <mxCell id="cCkPG6rzrQ6bPVn2WC5E-118" value="ExecutorWork" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=bottom;" vertex="1" parent="1">
           <mxGeometry x="-310" y="473.5" width="511.5" height="175" as="geometry" />
         </mxCell>
-        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-119" value="work" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-119" value="work&lt;div&gt;判断任务是否重复执行&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-292" y="536.5" width="93.5" height="49" as="geometry" />
         </mxCell>
         <mxCell id="cCkPG6rzrQ6bPVn2WC5E-123" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cCkPG6rzrQ6bPVn2WC5E-119" target="cCkPG6rzrQ6bPVn2WC5E-120">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-120" value="executeAndPostProcess" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-172.5" y="536.5" width="163.5" height="49" as="geometry" />
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-120" value="executeAndPostProcess&lt;div&gt;做回调前的准备工作&lt;/div&gt;&lt;div&gt;timer是否存在，是否激活，计算触发时间与设置时间的误差&lt;/div&gt;&lt;div&gt;回调执行完后做后置处理&lt;/div&gt;&lt;div&gt;更新数据库task状态&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-172.5" y="510" width="163.5" height="100" as="geometry" />
         </mxCell>
         <mxCell id="cCkPG6rzrQ6bPVn2WC5E-122" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cCkPG6rzrQ6bPVn2WC5E-120" target="cCkPG6rzrQ6bPVn2WC5E-121">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-121" value="executeTimerCallBack" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-121" value="executeTimerCallBack&lt;div&gt;根据回调参数执行请求，告知调用方&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="17.75" y="536.5" width="163.5" height="49" as="geometry" />
         </mxCell>
         <mxCell id="cCkPG6rzrQ6bPVn2WC5E-126" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cCkPG6rzrQ6bPVn2WC5E-114" target="cCkPG6rzrQ6bPVn2WC5E-119">
