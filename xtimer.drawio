@@ -35,7 +35,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-19" value="加分布式锁，对同一个app，&lt;div&gt;三秒内只能有一个线程操作&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-19" value="加分布式锁3s过期，对同一个app，&lt;div&gt;三秒内只能有一个线程操作&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-1094" y="360" width="270" height="120" as="geometry" />
         </mxCell>
         <mxCell id="cCkPG6rzrQ6bPVn2WC5E-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cCkPG6rzrQ6bPVn2WC5E-23" target="cCkPG6rzrQ6bPVn2WC5E-26">
@@ -179,8 +179,23 @@
         <mxCell id="cCkPG6rzrQ6bPVn2WC5E-77" value="handleSlices&lt;br&gt;&lt;div&gt;(执行每个桶)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-217" y="140" width="100" height="48" as="geometry" />
         </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-84" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cCkPG6rzrQ6bPVn2WC5E-78" target="cCkPG6rzrQ6bPVn2WC5E-83">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="cCkPG6rzrQ6bPVn2WC5E-78" value="handleSlice&lt;br&gt;&lt;div&gt;(执行)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-217" y="206" width="100" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-83" value="执行前一分钟的任务(重试)&lt;div&gt;执行当前分钟的任务&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-265" y="320" width="197" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-85" value="SchedulerTask" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="-373" y="410" width="283" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-86" value="asyncHandleSlice&lt;div&gt;(线程池异步执行)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-216.5" y="450" width="100" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-87" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cCkPG6rzrQ6bPVn2WC5E-83" target="cCkPG6rzrQ6bPVn2WC5E-86">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
