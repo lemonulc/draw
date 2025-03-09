@@ -1,25 +1,25 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.1.0">
   <diagram name="第 1 页" id="JjAhJUpeRirN_-w8hsYV">
-    <mxGraphModel dx="1720" dy="1097" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1571" dy="914" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-6" value="XtimerWebController" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-620" y="130" width="340" height="200" as="geometry" />
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-35" value="调接口触发" style="html=1;aspect=fixed;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;fillColor=#dae8fc;strokeColor=#6c8ebf;spacingBottom=10;labelBorderColor=none;fontSize=20;fontColor=light-dark(#330000,#6CA7FF);" vertex="1" parent="1">
+          <mxGeometry x="-794" y="70" width="560" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-31" value="XtimerWebController" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-620" y="140" width="340" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-6" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;MigratorManager" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-710" y="660" width="240" height="110" as="geometry" />
         </mxCell>
         <mxCell id="cCkPG6rzrQ6bPVn2WC5E-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cCkPG6rzrQ6bPVn2WC5E-7" target="cCkPG6rzrQ6bPVn2WC5E-17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-7" value="createrTime" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-600" y="250" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cCkPG6rzrQ6bPVn2WC5E-8" target="cCkPG6rzrQ6bPVn2WC5E-19">
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.494;entryY=0.073;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="cCkPG6rzrQ6bPVn2WC5E-8" target="cCkPG6rzrQ6bPVn2WC5E-19">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-230" y="280" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-8" value="enableTimer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-430" y="250" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="cCkPG6rzrQ6bPVn2WC5E-17" value="数据库插入" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-800" y="240" width="120" height="80" as="geometry" />
@@ -33,7 +33,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="cCkPG6rzrQ6bPVn2WC5E-19" value="加分布式锁，对同一个app，&lt;div&gt;三秒内只能有一个线程操作&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-505" y="350" width="270" height="120" as="geometry" />
+          <mxGeometry x="-504" y="360" width="270" height="120" as="geometry" />
         </mxCell>
         <mxCell id="cCkPG6rzrQ6bPVn2WC5E-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cCkPG6rzrQ6bPVn2WC5E-23" target="cCkPG6rzrQ6bPVn2WC5E-26">
           <mxGeometry relative="1" as="geometry" />
@@ -41,8 +41,20 @@
         <mxCell id="cCkPG6rzrQ6bPVn2WC5E-23" value="doEnbaleTimer" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-430" y="540" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-26" value="修改TImer状态&lt;div&gt;为激活&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-230" y="530" width="120" height="80" as="geometry" />
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cCkPG6rzrQ6bPVn2WC5E-26" target="cCkPG6rzrQ6bPVn2WC5E-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-26" value="修改TImer状态&lt;div&gt;为激活，调用任务迁移&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-690" y="530" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-7" value="createrTime" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-600" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-8" value="enableTimer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-430" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cCkPG6rzrQ6bPVn2WC5E-32" value="migrateTimer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-650" y="670" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
